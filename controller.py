@@ -34,16 +34,16 @@ def check_winning_win720(authCtrl: auth.AuthController) -> dict:
 def send_message(mode: int, lottery_type: int, response: dict, webhook_url: str):
     notify = notification.Notification()
 
-    if mode == 0:
-        if lottery_type == 0:
-            notify.send_lotto_winning_message(response, webhook_url)
-        else:
-            notify.send_win720_winning_message(response, webhook_url)
-    elif mode == 1: 
-        if lottery_type == 0:
-            notify.send_lotto_buying_message(response, webhook_url)
-        else:
-            notify.send_win720_buying_message(response, webhook_url)
+    # if mode == 0:
+    #     if lottery_type == 0:
+    #         notify.send_lotto_winning_message(response, webhook_url)
+    #     else:
+    #         notify.send_win720_winning_message(response, webhook_url)
+    # elif mode == 1: 
+    #     if lottery_type == 0:
+    #         notify.send_lotto_buying_message(response, webhook_url)
+    #     else:
+    #         notify.send_win720_buying_message(response, webhook_url)
 
 def check():
     load_dotenv()
